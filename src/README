@@ -1,0 +1,15 @@
+Source for the AVR microcontroller used in the 12-port S-Video/audio switch.
+Processes knob rotation, addresses audio/video multiplexers, and displays a
+menu on the VFD screen.
+
+The menu consists of a long horizontal "ribbon" with a logo representing each
+input.  Rotating the knob moves the visible portion of the ribbon to the left
+and right.  Inputs are configured in stitch.py and must have a corresponding
+32-pixel-high PNG in the logos directory.  stitch.py generates ribbon.h which
+contains the input configuration and pixel data for the ribbin.  It's called
+every time the Makefile runs and stitches the individual PNG files into one
+long bitmap in the VFD's pixel format.
+
+The menu also has a special "Info" logo.  When this is selected, a list of
+uptimes for the total system and for each input is scrolled vertically on the
+display.

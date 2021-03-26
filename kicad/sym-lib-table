@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name avswitch)(type Legacy)(uri ${KIPRJMOD}/avswitch.lib)(options "")(descr ""))
+  (lib (name avswitch_manual)(type Legacy)(uri ${KIPRJMOD}/avswitch_manual.lib)(options "")(descr ""))
+  (lib (name avswitch-rescue)(type Legacy)(uri ${KIPRJMOD}/avswitch-rescue.lib)(options "")(descr ""))
+)

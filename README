@@ -1,0 +1,9 @@
+KiCad design, AVR code, and misc CAD files for a 12-port S-Video/audio
+switch with VFD display, described in detail here:
+
+https://blog.ldtlb.com/2021/03/25/12-port-s-video-audio-switch.html
+
+The design in the KiCad files has multiple flaws.  Most importantly, the
+terminating resistors for the luminance and chroma inputs were omitted, and the
++5VD voltage regualt can become quite hot without a large heatsink.  These are
+explained in more detail in the post above.
